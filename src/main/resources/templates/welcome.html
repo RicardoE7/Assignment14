@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th="http://thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Welcome</title>
+</head>
+<body>
+	<div id="welcomeContent" style="display: none;">
+		<h1>
+			Welcome, <span id="usernameDisplay"></span>!
+		</h1>
+		<p>Choose a channel to join:</p>
+		<ul id="channel-list">
+			<li><a href="javascript:void(0);"
+				onclick="joinChannel('general')">General</a></li>
+			<li><a href="javascript:void(0);"
+				onclick="joinChannel('random')">Random</a></li>
+			<li><a href="javascript:void(0);" onclick="joinChannel('tech')">Tech</a></li>
+		</ul>
+	</div>
+	<script src="/js/welcome.js"></script>
+</body>
+</html>
